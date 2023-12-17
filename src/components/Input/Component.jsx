@@ -1,5 +1,5 @@
-import './inputReg.css'
-export function InputReg({label,placeholder,type}) {
+import './styles.css'
+export const Input = ({label,placeholder,type}) => {
     return (
         <div>
             {type==='email'&&<div>

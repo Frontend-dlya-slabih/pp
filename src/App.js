@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react'
-import Button from './components/Expamle/Component';
+import {Button} from './components/Button';
 import './App.css';
-import {InputReg} from './components/InputReg'
+import {Input} from "./components/Input"
 
 const Sandbox = () => (
     <Fragment>
-       <InputReg label='Адрес электронной почты' placeholder='Введите ваш e-mail' type='email' />
-      <InputReg label='Пароль' placeholder='********' type='password' />
-      <InputReg label='Номер телефона' placeholder='Введите ваш номер телефона' type='number' />
-      <InputReg label='Имя аккаунта' placeholder='Введите ваш никнейм' type='text' />
+      <Input label='Адрес электронной почты' placeholder='Введите ваш e-mail' type='email' />
+      <Input label='Пароль' placeholder='********' type='password' />
+      <Input label='Номер телефона' placeholder='Введите ваш номер телефона' type='number' />
+      <Input label='Имя аккаунта' placeholder='Введите ваш никнейм' type='text' />
     <div>
       <Button 
         onClick={Button} 
