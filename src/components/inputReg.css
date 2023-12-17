@@ -1,0 +1,53 @@
+.input {  
+    display: block;
+
+    width: 300px;
+    height: 30px;
+
+    margin-top: 10px;
+    padding: 7px 15px;
+
+    border: 1px solid #A9A9A9;
+    border-radius: 5px;
+    font-family: 'Segoe UI'
+}
+
+.input:focus {
+    outline: #6495ED;
+    border-color: #6495ED;
+}
+
+.star {
+    color: #6495ED;
+    font-family: 'roboto'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.f123 {
+    width: 10px;
+    height: 10px;
+}
