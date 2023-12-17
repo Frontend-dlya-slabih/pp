@@ -1,12 +1,21 @@
-import "./App.css";
-import { Example } from "./components/Expamle";
+import React, { Fragment } from 'react'
+import Button from './components/Expamle/Component';
 
-function App() {
-  return (
-    <div className="App">
-      <Example />
+const Sandbox = () => (
+    <Fragment>
+    <div>
+      <Button 
+        onClick={Button} 
+        disabled 
+      />
     </div>
-  );
-}
+    <Button 
+        onClick={Button} 
+        fullWidth
+        />
+        
 
-export default App;
+    </Fragment>
+);
+
+export default Sandbox;
