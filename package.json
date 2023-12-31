@@ -37,6 +37,8 @@
     ]
   },
   "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
     "web-vitals": "^3.5.0"
   }
 }

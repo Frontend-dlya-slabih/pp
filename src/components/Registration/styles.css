@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+.Input {  
+    display: block;
+    height: 30px;
+    width: 94%;
+
+    padding: 10px 0px 14px 16px;
+
+    border: 1px solid #A9A9A9;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    margin: 0 0 30px 0;
+
+}
+
+.Input:last-child {
+    margin: 0 0 40px 0;
+}
+
+
+.Input:focus {
+    outline: #6495ED;
+    border-color: #6495ED;
+}
+
+
+.form-group {
+    color: #444150;
+
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.star {
+    color: #6495ED;
+    font-family: 'roboto'
+}
+
+.show__hide__eye {
+    position: absolute;
+    margin-left: 320px;
+    margin-top: 40px;
+}
+
+.Check__box {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+
+}
+
+.Check__box__text {
+    color: #032D23;
+    font-family: Roboto;
+    font-size: 18px;
+
+    font-weight: 400;
+    line-height: 34px; 
+    letter-spacing: -0.33px;
+}
