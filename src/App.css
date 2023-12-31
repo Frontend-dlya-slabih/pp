@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    width: 426px;
+}
+
+
+.login {
+    padding: 199px 0;
+}
+
+
+.login__title {
+    font-family: Montserrat;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 29px;
+    color: #032D23;
+    font-style: normal;
+    line-height: 44px; 
+    letter-spacing: -0.64px;
+}
+
+#blue__text {
+    color: #6495ED;
+}
+
+
+.remember__forgot {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form .input-password__field {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-bottom: solid 1px;
+  }
+  
+  .form .input-password__field input {
+    border: none;
+    margin-right: 10px;
+    flex: 1 1;
+  
+    -webkit-text-security: star;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

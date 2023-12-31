@@ -1,26 +1,49 @@
-import React, { Fragment } from 'react'
+import { useState } from 'react';
 import {Button} from './components/Button';
-import './App.css';
 import {Input} from "./components/Input"
 
-const Sandbox = () => (
-    <Fragment>
-      <Input label='Адрес электронной почты' placeholder='Введите ваш e-mail' type='email' />
-      <Input label='Пароль' placeholder='********' type='password' />
-      <Input label='Номер телефона' placeholder='Введите ваш номер телефона' type='number' />
-      <Input label='Имя аккаунта' placeholder='Введите ваш никнейм' type='text' />
-    <div>
-      <Button 
-        onClick={Button} 
-        disabled 
-      />
-    </div>
-    <Button 
-        onClick={Button} 
-        fullWidth
+import './App.css';
+
+export default function LoginForm() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+ 
+
+  return (
+    <div className='login'>
+      <div className='container'>
+        <div className='login__title'>Добро пожаловать на сайт</div>
+        <div className='login__title' id={["blue__text"]}>Производственная практика</div>
+        <Input 
+          label = 'Адрес электронной почты' 
+          placeholder = 'Введите ваш e-mail' 
+          type = 'email'
+          value = {email}
+          onChange = {e => setEmail(e.target.value)}
         />
-
-    </Fragment>
-);
-
-export default Sandbox;
+        <Input 
+          label='Пароль' 
+          placeholder='********' 
+          type='password'
+          value = {password}
+          onChange = {e => setPassword(e.target.value)}
+        />
+        <div className='remember__forgot'>
+          <Input
+            type='checkbox'
+            label='Запомнить меня'
+          />
+          <a href='https://vk.com/im?sel=487548034'>Забыли пароль?</a>
+        </div>
+        <Button
+          onClick={Button}
+          fullWidth
+        />
+        <div className='registration'>
+          <div>Нет аккаунта?</div>
+          <a href='https://vk.com/im?sel=487548034'>Регистрация</a>
+        </div>
+      </div>    
+    </div>
+  );
+}
