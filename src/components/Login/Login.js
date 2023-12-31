@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import {Button} from './components/Button';
-import {Input} from "./components/Input"
+import {Button} from '../Button/Component.jsx';
+import {Input} from "../Input/Component.jsx"
 
 
-import './App.css';
+import '../Login/Login.css';
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
