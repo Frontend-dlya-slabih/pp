@@ -2,6 +2,7 @@ import { useState } from 'react';
 import {Button} from './components/Button';
 import {Input} from "./components/Input"
 
+
 import './App.css';
 
 export default function LoginForm() {
@@ -33,15 +34,15 @@ export default function LoginForm() {
             type='checkbox'
             label='Запомнить меня'
           />
-          <a href='https://vk.com/im?sel=487548034'>Забыли пароль?</a>
+          <a href='https://vk.com/im?sel=487548034' className='forget__password'>Забыли пароль?</a>
         </div>
         <Button
           onClick={Button}
           fullWidth
         />
         <div className='registration'>
-          <div>Нет аккаунта?</div>
-          <a href='https://vk.com/im?sel=487548034'>Регистрация</a>
+          <div className='registration__text'>Нет аккаунта?</div>
+          <a href='https://vk.com/im?sel=487548034' className='registration__text' id={["blue__text"]}>Регистрация</a>
         </div>
       </div>    
     </div>

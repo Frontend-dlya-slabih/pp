@@ -17,8 +17,7 @@ export const Button = ({
 
     const classes = classNames(
         'btn',
-        {["fullWidth"]:fullWidth},
-        className,
+        {fullWidth}
 
     );
 
