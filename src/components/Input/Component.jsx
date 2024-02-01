@@ -13,8 +13,8 @@ export const Input = ({label,placeholder,type}) => {
     }
 
 return (
-        <div>
-            {type==='email'&&<div>
+        <>
+            {type==='email'&&<>
                 <label className='label__text' >{label}<span className='star'>*</span>
                     <input 
                         placeholder={placeholder} 
@@ -23,10 +23,10 @@ return (
                         type={type} 
                     />
                 </label>
-            </div>}
-            {type==='password'&&<div>
+            </>}
+            {type==='password'&&<>
                 <label className='label__text'>{label}<span className='star'>*</span>
-                <label className='show__hide__eye' onClick={handleShow}>{show?<img src={Eye_Open} />:<img src={Eye_Close} />}</label>
+                <div className='show__close__img'><label className='show__hide__eye' onClick={handleShow}>{show?<img alt='open' src={Eye_Open} />:<img alt='close' src={Eye_Close} />}</label></div>
                     <input 
                         placeholder={placeholder} 
                         required 
@@ -35,8 +35,8 @@ return (
                     />
                     
                 </label>
-            </div>}
-            {type==='number'&&<div>
+            </>}
+            {type==='number'&&<>
                 <label className='label__text'>{label}<span className='star'>*</span>
                     <input 
                         placeholder={placeholder}                                                                           
@@ -45,8 +45,8 @@ return (
                         type={type} 
                     />
                 </label>
-            </div>}
-            {type==='text'&&<div>
+            </>}
+            {type==='text'&&<>
                 <label className='label__text'>{label}<span className='star'>*</span>
                     <input 
                         placeholder={placeholder} 
@@ -55,7 +55,7 @@ return (
                         type={type} 
                     />
                 </label>
-            </div>}
+            </>}
             {type==='checkbox'&&<div>
                 <input 
                         type={type}
@@ -63,6 +63,6 @@ return (
                     />
                 <label className='Check__box__text'>{label}</label>
             </div>}
-        </div>
+        </>
     )
 }                               
